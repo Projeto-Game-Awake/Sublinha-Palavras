@@ -21,7 +21,7 @@ class Main extends Phaser.Scene
 
     preload ()
     {
-        this.load.html('list', '/html/list.html');
+        this.load.html('list', 'html/list.html');
         this.load.json('jogo', "data/" + jogo + ".json"); 
     }
 
