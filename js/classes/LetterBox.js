@@ -4,18 +4,7 @@ class LetterBox extends Phaser.GameObjects.Container {
         let box = scene.add.rectangle(0,0,30,30, 0xffffff);
         box.setInteractive();
         let text = null;
-        if(Number.isInteger(letter)) {
-            box.on(
-            "pointerdown",
-            () => {
-                this.scene.message = this.tip;
-                this.scene.showMessage(true);
-            });
-            text = scene.add.text(0,0, letter, 
-                {color: '#f00'}
-            );
-        } else {
-            box.on(
+        box.on(
             "pointerdown",
             () => {
                 this.select()
@@ -23,7 +12,6 @@ class LetterBox extends Phaser.GameObjects.Container {
             text = scene.add.text(0,0, letter, 
                 {color: '#000'}
             );
-        }
         
         text.setOrigin(0.5);
         super(scene,x,y,[box,text]);
@@ -55,13 +43,11 @@ class LetterBox extends Phaser.GameObjects.Container {
                     let j = word.x1;
                     let k = word.y1;
 
-                    let id1 = "";
-                    let id2 = "";
+                    let id = "";
 
                     do {
                         do {
-                            id1 = this.scene.collection[j][k].letter + id1;
-                            id2 += this.scene.collection[j][k].letter;
+                            id += this.scene.collection[j][k].letter;
                             let box = this.scene.collection[j][k].box;
                             box.setStrokeStyle(2, 0x0000ff);
                             box.setFillStyle(0x0000ff, 0.3);
@@ -77,8 +63,8 @@ class LetterBox extends Phaser.GameObjects.Container {
                         j+=stepX;
                     } while(true);
                     this.scene.selected = null;
-                    this.underLineWord(id1);
-                    this.underLineWord(id2);
+                    console.log(id);
+                    this.underLineWord(id);
                     return;
                 }
             }
