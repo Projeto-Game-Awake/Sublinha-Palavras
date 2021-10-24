@@ -1,0 +1,87 @@
+{
+    "diagonal":false,
+    "reverse":false,
+    "title":"OBSTÁCULOS À PERSEVERANÇA",
+    "list":[
+        "",
+        "ROTINA",
+        " – Devemos tomar muito cuidado com o automatismo, pois quando passamos a ",
+        "AGIR",
+        " mecanicamente podemos ficar desestimulados, desanimados. E, ao ",
+        "FUGIR",
+        " dessa mecanização, abrimos novos caminhos e libertamos nosso ",
+        "PENSAMENTO",
+        ".\n",
+        "DESÂNIMO",
+        " – Quando estamos desanimados, perdemos a ",
+        "VONTADE",
+        " das coisas, nada parece nos deixar contentes. Com isso, outros pontinhos desagradáveis são agregados como por exemplo a ",
+        "PREGUIÇA",
+        " moral, o gosto pela ",
+        "COMODIDADE",
+        ", a instabilidade de ",
+        "HUMOR",
+        " etc.\n",
+        "MEDO",
+        " – O medo aparece principalmente diante de mudanças.  Ë necessário tomar cuidado para não ",
+        "ESTAGNAR",
+        ", pois assim acabamos por fechar as portas para o ",
+        "PROGRESSO",
+        "."
+    ],
+    "lines":[
+        "ROMUHAAIOJHFREVCSQA",
+        "ODFNTGWYZAXBMJLPPWG",
+        "TVRADGATSHICTUDEZQI",
+        "IEOMEDOÇQURNNTODLNR",
+        "NJJOSWPUCOMODIDADEO",
+        "ADSCAXZMWOIKSRLTGZV",
+        "QOFRNFFTTUKOOAANIIO",
+        "ALEEIGBNJISSERGORPC",
+        "ELYEMTETRORIPQTVUTV",
+        "REIUOMPEELRUOWYGYVB",
+        "TIHSARHRRPHTLFRFEDH",
+        "TOHSPTYBTHVBKGFIEFH",
+        "PANRLTRANGATSETQGJP",
+        "HERTRYRCWQGMJFGWRUL",
+        "PREGUIÇAAWNNTWQDSHF"
+    ],
+    "words":[
+        {
+            "x1":0,"y1":0,"x2":5,"y2":0
+        },
+        {
+            "x1":0,"y1":18,"x2":3,"y2":18
+        },
+        {
+            "x1":14,"y1":18,"x2":10,"y2":14
+        },
+        {
+            "x1":14,"y1":0,"x2":5,"y2":9
+        },
+        {
+            "x1":2,"y1":4,"x2":9,"y2":4
+        },
+        {
+            "x1":8,"y1":15,"x2":2,"y2":15
+        },
+        {
+            "x1":7,"y1":17,"x2":7,"y2":9
+        },
+        {
+            "x1":12,"y1":6,"x2":12,"y2":13
+        },
+        {
+            "x1":0,"y1":4,"x2":0,"y2":0
+        },
+        {
+            "x1":14,"y1":0,"x2":14,"y2":7
+        },
+        {
+            "x1":4,"y1":8,"x2":4,"y2":17
+        },
+        {
+            "x1":3,"y1":3,"x2":3,"y2":6
+        }
+    ]         
+}
