@@ -63,7 +63,6 @@ class LetterBox extends Phaser.GameObjects.Container {
                         j+=stepX;
                     } while(true);
                     this.scene.selected = null;
-                    console.log(id);
                     this.underLineWord(id);
                     return;
                 }
@@ -111,10 +110,6 @@ class LetterBox extends Phaser.GameObjects.Container {
         return false;
     }
     setColorBox(box) {
-        if(this.isVisible) {
-            box.setStrokeStyle(4, 0x0000ff);
-        } else {
-            box.setStrokeStyle(2, 0x000000);
-        }
+        box.setStrokeStyle(2, 0x000000);
     }
 }

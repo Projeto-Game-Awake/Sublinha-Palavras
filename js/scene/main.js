@@ -22,15 +22,13 @@ class Main extends Phaser.Scene
     preload ()
     {
         this.load.html('list', 'html/list.html');
-        this.load.json('jogo', "data/" + jogo + ".json"); 
+        this.load.json('jogo', "data/" + GameAwakeUtils.getJSONName(jogo) + ".json"); 
     }
 
     create ()
     {
         let json = this.cache.json.get("jogo");
         try {
-            this.diagonal = json.diagonal;
-            this.reverse = json.reverse;
             this.lines = json.lines;
             this.words = json.words;
         } catch {
