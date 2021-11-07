@@ -66,28 +66,11 @@ class Main extends Phaser.Scene
             y += boxSize;
         }
 
-        let button = this.add.rectangle(750,60,80,80, 0x0000ff);
-        button.setStrokeStyle(4, 0xdddddd);
-        button.setInteractive();
-        button.on(
-        "pointerdown",
-        () => {
-            this.list.element.setVisible(!this.list.element.visible);
-            /*this.hasWon = true;
-            for(let i=0;i<this.collection.length;i++) {
-                for(let j=0;j<this.collection[i].length;j++) {
-                    if(this.collection[i][j] != null && !this.collection[i][j].isMatch()) {
-                        this.hasWon = false;
-                    }
-                }
+        new ToogleButton(this,750,60,80,80, 0x0000ff, 4, 0xdddddd, "x","ˆ",
+            () => {
+                this.list.element.setVisible(!this.list.element.visible);
             }
-            if(this.hasWon) {
-                this.message = "Parabéns";
-            } else {
-                this.message = "Tente novamente";
-            }
-            this.showMessage();*/
-        });
+        );
 
         this.list = new List(this, json.title,json.list);
     }
